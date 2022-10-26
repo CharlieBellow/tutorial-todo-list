@@ -4,6 +4,7 @@ import Tasks from './components/Tasks'
 import AddTask from './components/AddTask'
 
 import {v4 as uuidv4} from 'uuid'
+import Header from './components/Header';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
 
   return (
 		<div className="container">
+			<Header/>
 			<AddTask handleTaskAddiction={ handleTaskAddiction} />
 			<Tasks tasks={tasks} handleTaskClick={handleTaskClick} handleTaskDeletion={handleTaskDeletion} />
 		</div>
